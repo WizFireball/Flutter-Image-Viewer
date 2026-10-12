@@ -139,11 +139,20 @@ class SettingsPage extends StatelessWidget {
       padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 16),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(16),
-        gradient: const LinearGradient(
-          colors: [Color(0xFFF4F4F4), Color(0xFFCFE3FF)],
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
-        ),
+        
+        // gradient: const LinearGradient(
+        //   colors: [Color(0xFFF4F4F4), Color(0xFFCFE3FF)],
+        //   begin: Alignment.topLeft,
+        //   end: Alignment.bottomRight,
+        // ),
+
+        // Added image because this help in seeing the
+        // blur effect of the pill
+        image: DecorationImage(
+          image: AssetImage("assets/strip.png"),
+          fit: BoxFit.cover
+        )
+        
       ),
       child: Column(
         children: [
